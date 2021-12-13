@@ -20,7 +20,7 @@ for (let i = 0; i < allEmail.length; i++) {
 if (emailPresente) {
     console.log(`Welcome Back`)
 } else {
-    console.log(`Maybe you have to register`)
+    console.log(`Maybe you need to register`)
 }
 
 
@@ -28,17 +28,21 @@ if (emailPresente) {
 /* Dadi */
 
 // Dadi random pc / utente
-const userNumber = Math.floor(Math.random() * 6) + 1;
+let userNumber = Math.floor(Math.random() * 6) + 1;
 console.log(`Il tuo numero:` + userNumber);
-const pcNumber = Math.floor(Math.random() * 6) + 1;
+let pcNumber = Math.floor(Math.random() * 6) + 1;
 console.log(`Il numero del tuo avversario:` + pcNumber);
 
 // Comparazione
 if(userNumber > pcNumber){
     console.log(`Ha vinto`);
 }
+else if(userNumber = pcNumber) {
+    console.log(`Avete pareggiato`);
+}
 else {
     console.log(`Hai perso`);
 }
 
+ 
 
