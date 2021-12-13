@@ -28,14 +28,17 @@ if (emailPresente) {
 /* Dadi */
 
 // Dadi random pc / utente
-const userNumber = Math.floor(Math.random() * 7);
+const userNumber = Math.floor(Math.random() * 6) + 1;
 console.log(`Il tuo numero:` + userNumber);
-const pcNumber = Math.floor(Math.random() * 7);
+const pcNumber = Math.floor(Math.random() * 6) + 1;
 console.log(`Il numero del tuo avversario:` + pcNumber);
 
 // Comparazione
 if(userNumber > pcNumber){
-    console.log(`Ha vinto`)
-}else {
-    console.log(`Hai perso`)
+    console.log(`Ha vinto`);
 }
+else {
+    console.log(`Hai perso`);
+}
+
+
