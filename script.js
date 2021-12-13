@@ -35,14 +35,11 @@ console.log(`Il numero del tuo avversario:` + pcNumber);
 
 // Comparazione
 if(userNumber > pcNumber){
-    console.log(`Ha vinto`);
+    console.log(`Ha vinto!`);
 }
-else if(userNumber = pcNumber) {
-    console.log(`Avete pareggiato`);
+else if(userNumber < pcNumber){
+    console.log(`Hai perso!`);
 }
-else {
-    console.log(`Hai perso`);
+else{
+    console.log(`Avete pareggiato!`);
 }
-
- 
-
